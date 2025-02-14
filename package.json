@@ -8,7 +8,10 @@
     "stop": "docker compose down",
     "clean": "docker compose down -v",
     "status": "docker compose ps",
-    "logs": "docker compose logs -f"
+    "logs": "docker compose logs -f",
+    "db:setup": "scripts/setup-postgres.sh && scripts/setup-mongodb.sh && scripts/setup-dynamodb.sh",
+    "db:backup": "scripts/backup-databases.sh",
+    "db:clean": "scripts/clean-data.sh"
   },
   "keywords": ["Docker", "Compose", "PostgreSQL", "MongoDB", "DynamoDB"],
   "author": "",
