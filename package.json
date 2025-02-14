@@ -1,0 +1,16 @@
+{
+  "name": "local-dev-db",
+  "version": "1.0.0",
+  "description": "Using Docker Compose, create the dbs need for many of W10M's products locally.",
+  "main": "index.js",
+  "scripts": {
+    "start": "docker compose up -d",
+    "stop": "docker compose down",
+    "clean": "docker compose down -v",
+    "status": "docker compose ps",
+    "logs": "docker compose logs -f"
+  },
+  "keywords": ["Docker", "Compose", "PostgreSQL", "MongoDB", "DynamoDB"],
+  "author": "",
+  "license": "ISC"
+}
